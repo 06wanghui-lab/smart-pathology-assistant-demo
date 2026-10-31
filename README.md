@@ -10,7 +10,7 @@ The complete source code is maintained in the [IT5007 Group 10 project repositor
 
 ## Project showcase
 
-You can learn more about the course projects through the [29th School of Computing Term Project Showcase (STePS)](https://uvents.nus.edu.sg/event/29th-steps). Our project page is available under [IT5007 Project 2](https://uvents.nus.edu.sg/event/29th-steps/module/IT5007/project/2); additional project information will be added there later.
+You can learn more about the course projects through the [29th School of Computing Term Project Showcase (STePS)](https://uvents.nus.edu.sg/event/29th-steps). Our project page is available under [IT5007 Project 2](https://uvents.nus.edu.sg/event/29th-steps/module/IT5007/project/2).
 
 ## Licences and attribution
 
