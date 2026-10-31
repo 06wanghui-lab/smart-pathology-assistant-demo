@@ -1,16 +1,19 @@
-# React + Vite
+# Smart Pathology Assistant — Static Demo
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+This repository contains a standalone static demonstration of the frontend slide-viewing experience developed for our IT5007 course project. The complete project includes a React frontend, backend services, authentication and session management, and a UNI-based machine-learning pipeline. To make this demonstration publicly accessible without depending on a running backend or ML service, it uses preloaded PANDA slide tiles and pre-generated prediction results stored as static JSON files.
 
-Currently, two official plugins are available:
+This application is intended solely for educational and demonstration purposes. It is not a medical device and must not be used for medical diagnosis, treatment decisions or patient care.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+## Full project
 
-## React Compiler
+The complete source code is maintained in the [IT5007 Group 10 project repository](https://github.com/IT5007-2610/it5007-courseproject-group-10). That repository is currently private and is planned to be made public after the course ends.
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+## Project showcase
 
-## Expanding the ESLint configuration
+You can learn more about the course projects through the [29th School of Computing Term Project Showcase (STePS)](https://uvents.nus.edu.sg/event/29th-steps). Our project page is available under [IT5007 Project 2](https://uvents.nus.edu.sg/event/29th-steps/module/IT5007/project/2); additional project information will be added there later.
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## Licences and attribution
+
+The original application source code is licensed under the [MIT Licence](LICENSE). PANDA-derived slide assets are separately licensed under CC BY-NC-SA 4.0 and are not covered by the software licence. See [Dataset Attribution and Licence](DATA_LICENSE.md) for the dataset source, modifications, attribution and usage conditions.
+
+The prediction pipeline used UNI under its non-commercial academic research terms. This repository does not include UNI weights or checkpoints. See [UNI Model Attribution](MODEL_NOTICE.md) for the model source, licence and citation.

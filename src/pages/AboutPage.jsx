@@ -50,22 +50,61 @@ export default function AboutPage() {
           >
             Prostate cANcer graDe Assessment (PANDA) Challenge dataset
           </Link>
-          . The prediction overlays were generated before deployment by the
-          project&apos;s machine-learning pipeline. The pipeline divides each
-          slide into image patches, uses UNI to extract pathology image
-          features, and applies a trained classifier to assign a tissue class
-          to each patch. Further information about the foundation model is
-          available in the{" "}
+          . This demonstration uses a five-slide subset that was converted from
+          the original TIFF whole-slide images into DZI tiles for browser-based
+          viewing. These PANDA-derived assets are used under the{" "}
           <Link
-            href="https://arxiv.org/pdf/2308.15474"
+            href="https://creativecommons.org/licenses/by-nc-sa/4.0/"
             target="_blank"
             rel="noreferrer"
             {...externalLinkStyles}
           >
-            UNI research paper
+            CC BY-NC-SA 4.0 licence
+          </Link>
+          ; please refer to the{" "}
+          <Link
+            href="https://doi.org/10.1038/s41591-021-01620-2"
+            target="_blank"
+            rel="noreferrer"
+            {...externalLinkStyles}
+          >
+            PANDA publication
+          </Link>{" "}
+          for the dataset citation. The prediction overlays were generated
+          before deployment by the project&apos;s machine-learning pipeline.
+          The pipeline divides each slide into image patches, uses{" "}
+          <Link
+            href="https://huggingface.co/MahmoodLab/UNI"
+            target="_blank"
+            rel="noreferrer"
+            {...externalLinkStyles}
+          >
+            UNI
+          </Link>
+          , a pathology foundation model developed by Mahmood Lab AI for
+          Pathology at Harvard/BWH, to extract image features, and applies a
+          trained classifier to assign a tissue class to each patch. UNI is
+          provided under{" "}
+          <Link
+            href="https://creativecommons.org/licenses/by-nc-nd/4.0/"
+            target="_blank"
+            rel="noreferrer"
+            {...externalLinkStyles}
+          >
+            CC BY-NC-ND 4.0
+          </Link>{" "}
+          for non-commercial academic research; please refer to the{" "}
+          <Link
+            href="https://doi.org/10.1038/s41591-024-02857-3"
+            target="_blank"
+            rel="noreferrer"
+            {...externalLinkStyles}
+          >
+            official UNI publication
           </Link>
           . This static website only reads the saved prediction results and does
-          not run a machine-learning service or generate new predictions.
+          not run a machine-learning service, generate new predictions, or
+          distribute UNI model weights or checkpoints.
         </Text>
 
         <Text color="app.muted" lineHeight="1.9">
