@@ -108,6 +108,19 @@ export default function AboutPage() {
         </Text>
 
         <Text color="app.muted" lineHeight="1.9">
+          The source code for this static demonstration is available in the{" "}
+          <Link
+            href="https://github.com/06wanghui-lab/smart-pathology-assistant-demo"
+            target="_blank"
+            rel="noreferrer"
+            {...externalLinkStyles}
+          >
+            Smart Pathology Assistant Demo GitHub repository
+          </Link>
+          .
+        </Text>
+
+        <Text color="app.muted" lineHeight="1.9">
           This application is provided solely for educational and demonstration
           purposes. It is not a medical device, and its predictions have not
           been clinically validated. It must not be used for medical diagnosis,

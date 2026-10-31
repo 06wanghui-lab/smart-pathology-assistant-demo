@@ -4,6 +4,12 @@ This repository contains a standalone static demonstration of the frontend slide
 
 This application is intended solely for educational and demonstration purposes. It is not a medical device and must not be used for medical diagnosis, treatment decisions or patient care.
 
+## Live demo
+
+Visit the [Smart Pathology Assistant static demo](https://smart-pathology-assistant-demo.vercel.app/).
+
+You can also [browse the available demo cases](https://smart-pathology-assistant-demo.vercel.app/cases).
+
 ## Full project
 
 The complete source code is maintained in the [IT5007 Group 10 project repository](https://github.com/IT5007-2610/it5007-courseproject-group-10). That repository is currently private and is planned to be made public after the course ends.
