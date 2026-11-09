@@ -1,4 +1,5 @@
-import { Heading, Link, Text, VStack } from "@chakra-ui/react";
+import { Box, Heading, HStack, Link, Text, VStack } from "@chakra-ui/react";
+import { LuExternalLink, LuHeart } from "react-icons/lu";
 
 const externalLinkStyles = {
   color: "app.primary",
@@ -24,20 +25,98 @@ export default function AboutPage() {
         About Smart Pathology Assistant
       </Heading>
 
+      <Box
+        layerStyle="appPanel"
+        borderWidth="2px"
+        borderColor="app.primary"
+        p={{ base: "5", md: "6" }}
+      >
+        <VStack align="stretch" gap="3">
+          <Text
+            color="app.primary"
+            fontSize="sm"
+            fontWeight="700"
+            letterSpacing="0.04em"
+            textTransform="uppercase"
+          >
+            29th NUS School of Computing Term Project Showcase
+          </Text>
+
+          <Heading as="h2" fontSize={{ base: "xl", md: "2xl" }}>
+            Featured at STePS
+          </Heading>
+
+          <Text color="app.muted" lineHeight="1.8">
+            View our official IT5007 project page. If you enjoy our demo, please
+            vote for us!
+          </Text>
+
+          <HStack align="stretch" flexWrap="wrap" gap="3" pt="1">
+            <Link
+              href="https://uvents.nus.edu.sg/event/29th-steps/module/IT5007/project/2"
+              target="_blank"
+              rel="noreferrer"
+              display="inline-flex"
+              alignItems="center"
+              justifyContent="center"
+              gap="2"
+              minH="11"
+              px="5"
+              bg="app.primary"
+              color="white"
+              borderRadius="appControl"
+              fontSize="sm"
+              fontWeight="600"
+              textDecoration="none"
+              _hover={{ bg: "app.primaryHover", textDecoration: "none" }}
+            >
+              View Official Project Page
+              <LuExternalLink aria-hidden="true" />
+            </Link>
+
+            <Link
+              href="https://uvents.nus.edu.sg/event/29th-steps/vote"
+              target="_blank"
+              rel="noreferrer"
+              display="inline-flex"
+              alignItems="center"
+              justifyContent="center"
+              gap="2"
+              minH="11"
+              px="5"
+              bg="purple.600"
+              color="white"
+              borderRadius="appControl"
+              fontSize="sm"
+              fontWeight="600"
+              textDecoration="none"
+              _hover={{ bg: "purple.700", textDecoration: "none" }}
+            >
+              Vote for Us at STePS
+              <LuHeart aria-hidden="true" />
+            </Link>
+          </HStack>
+
+          <Text color="app.muted" fontSize="xs">
+            On the voting page, select IT5007 Project 2. A valid event voting
+            token is required.
+          </Text>
+        </VStack>
+      </Box>
+
       <VStack align="stretch" gap="4">
         <Text color="app.muted" lineHeight="1.9">
           Smart Pathology Assistant was developed as a complete university
           course project comprising a frontend application, backend services,
           authentication and session management, and a UNI-based
-          machine-learning pipeline. This website is a standalone static
-          version created specifically to demonstrate the frontend
-          slide-viewing and prediction-overlay experience. To make the
-          demonstration publicly accessible without depending on a running
-          backend or machine-learning service, it uses preloaded PANDA slide
-          tiles and pre-generated prediction results stored as static JSON
-          files. It demonstrates the viewing and review workflow but does not
-          accept slide uploads, call the original backend or generate new
-          predictions.
+          machine-learning pipeline. This website is a standalone static version
+          created specifically to demonstrate the frontend slide-viewing and
+          prediction-overlay experience. To make the demonstration publicly
+          accessible without depending on a running backend or machine-learning
+          service, it uses preloaded PANDA slide tiles and pre-generated
+          prediction results stored as static JSON files. It demonstrates the
+          viewing and review workflow but does not accept slide uploads, call
+          the original backend or generate new predictions.
         </Text>
 
         <Text color="app.muted" lineHeight="1.9">
@@ -71,8 +150,8 @@ export default function AboutPage() {
             PANDA publication
           </Link>{" "}
           for the dataset citation. The prediction overlays were generated
-          before deployment by the project&apos;s machine-learning pipeline.
-          The pipeline divides each slide into image patches, uses{" "}
+          before deployment by the project&apos;s machine-learning pipeline. The
+          pipeline divides each slide into image patches, uses{" "}
           <Link
             href="https://huggingface.co/MahmoodLab/UNI"
             target="_blank"

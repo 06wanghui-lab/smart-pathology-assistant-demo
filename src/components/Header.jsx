@@ -1,4 +1,13 @@
-import { Box, Heading, HStack, Image, Text, VStack } from "@chakra-ui/react";
+import {
+  Box,
+  Heading,
+  HStack,
+  Image,
+  Link,
+  Text,
+  VStack,
+} from "@chakra-ui/react";
+import { LuHeart } from "react-icons/lu";
 import logo from "../assets/logo.webp";
 import UserMenu from "./UserMenu";
 import { NavLink } from "react-router-dom";
@@ -94,6 +103,38 @@ export default function Header({ user }) {
         <HeaderNavItem to="/cases">Cases</HeaderNavItem>
 
         <HeaderNavItem to="/about">About</HeaderNavItem>
+
+        <Link
+          href="https://uvents.nus.edu.sg/event/29th-steps/vote"
+          target="_blank"
+          rel="noreferrer"
+          alignSelf="center"
+          display="inline-flex"
+          alignItems="center"
+          justifyContent="center"
+          gap="1.5"
+          minH={{ base: "8", md: "9" }}
+          px={{ base: "3", md: "4" }}
+          bg="purple.600"
+          color="white"
+          borderRadius="full"
+          fontSize={{ base: "xs", md: "sm" }}
+          fontWeight="700"
+          textDecoration="none"
+          whiteSpace="nowrap"
+          boxShadow="0 4px 12px rgba(126, 34, 206, 0.22)"
+          transition="background-color 0.2s, transform 0.2s, box-shadow 0.2s"
+          _hover={{
+            bg: "purple.700",
+            textDecoration: "none",
+            transform: "translateY(-1px)",
+            boxShadow: "0 6px 16px rgba(126, 34, 206, 0.28)",
+          }}
+          aria-label="Vote for Smart Pathology Assistant at STePS"
+        >
+          Vote: IT5007 P02
+          <LuHeart aria-hidden="true" />
+        </Link>
       </HStack>
       <Box flex="1" />
       <UserMenu user={user} />
